@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_07_10_182850) do
+ActiveRecord::Schema.define(version: 2021_07_10_190614) do
 
   create_table "clients", force: :cascade do |t|
     t.string "name"
@@ -32,6 +32,8 @@ ActiveRecord::Schema.define(version: 2021_07_10_182850) do
     t.string "eori"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "exporter"
+    t.string "importer"
   end
 
 end

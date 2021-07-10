@@ -1,6 +1,6 @@
-class PagesController < ApplicationController
+class ClientsController < ApplicationController
 
-  def home
+  def index
       
   end
   
