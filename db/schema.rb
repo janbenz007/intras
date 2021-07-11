@@ -34,6 +34,16 @@ ActiveRecord::Schema.define(version: 2021_07_11_115220) do
   end
 
   create_table "transactions", force: :cascade do |t|
+    t.integer "classification_id"
+    t.integer "year"
+    t.integer "month"
+    t.integer "day"
+    t.integer "quantity"
+    t.integer "unitprice"
+    t.string "quantityunit"
+    t.string "unitpricefx"
+    t.integer "exporter_id"
+    t.integer "importer_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

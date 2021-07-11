@@ -1,0 +1,11 @@
+prvni:
+  classification_id: 1
+  year: 2021
+  month: 5
+  day: 10
+  unitprice: 12
+  quantity: 1000
+  quantityunit: kg
+  unitpricefx: EUR
+  exporter_id: 1
+  importer_id: 2
