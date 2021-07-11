@@ -1,0 +1,21 @@
+mrkev:
+  description: mrkev
+  classification_id: 1
+
+carrot:
+  description: carrot
+  classification_id: 1
+  
+zanahoria:
+  description: zanahoria
+  classification_id: 1
+
+jablko::
+  description: jablko
+  classification_id: 2
+
+sled:
+  description: sled
+  classification_id: 3
+  
+  

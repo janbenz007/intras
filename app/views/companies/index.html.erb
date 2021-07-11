@@ -1,0 +1,21 @@
+<h1>List of all companies</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Origin</th>
+      <th>EORI</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @companies.each do |company| %>
+      <tr>
+        <td><%= company.name %></td>
+        <td><%= company.origin %></td>
+        <td><%= company.eori %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table> 

@@ -1,10 +1,7 @@
-class ClientsController < ApplicationController
+class CompaniesController < ApplicationController
 
   def index
-      
-  end
-  
-  def about
-  end
+    @companies = Company.all
+  end   
 
 end
