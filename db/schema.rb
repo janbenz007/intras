@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_07_11_155224) do
+ActiveRecord::Schema.define(version: 2021_09_11_125833) do
 
   create_table "classifications", force: :cascade do |t|
     t.string "code"
@@ -28,13 +28,11 @@ ActiveRecord::Schema.define(version: 2021_07_11_155224) do
 
   create_table "invoices", force: :cascade do |t|
     t.string "number"
-    t.integer "transaction_id"
     t.integer "exporter_id"
     t.integer "importer_id"
-    t.integer "company_id"
+    t.integer "report_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["company_id"], name: "index_invoices_on_company_id"
   end
 
   create_table "labels", force: :cascade do |t|
@@ -42,6 +40,15 @@ ActiveRecord::Schema.define(version: 2021_07_11_155224) do
     t.integer "classification_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "reports", force: :cascade do |t|
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.integer "invoice_id"
+    t.integer "month"
+    t.integer "year"
+    t.integer "company_id"
   end
 
   create_table "transactions", force: :cascade do |t|

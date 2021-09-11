@@ -2,3 +2,24 @@
 
 <p><strong>EORI:</strong> <%= @company.eori %></p>
 <p><strong>Origin:</strong> <%= @company.origin %></p>
+<br>
+<h2>Měsíční hlášení</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Měsíc</th>
+      <th>Rok</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @company.reports.each do |report| %>
+      <tr>
+        <td><%= report.month %></td>
+        <td><%= report.year %></td>
+        <td>Vybrat</td>
+      </tr>
+    <% end %>
+  </tbody>
+</table> 

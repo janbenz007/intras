@@ -3,3 +3,5 @@ faktura1:
   importer_id: 2
   number: "abc123"
   id: 1
+  report_id: 1
+  

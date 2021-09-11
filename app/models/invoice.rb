@@ -1,7 +1,8 @@
 class Invoice < ApplicationRecord
   # transaction that shows up on an invoice : captures goods, quantity, unit price etc.
   
-  #belongs_to :company
+  belongs_to :company
+  belongs_to :report
   has_many :transactions
 
   def exporter
