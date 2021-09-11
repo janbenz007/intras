@@ -11,6 +11,7 @@ class CreateTransactions < ActiveRecord::Migration[6.1]
       t.string :unitpricefx # currency the price is in such as EUR, CZK or PLN
       t.integer :exporter_id
       t.integer :importer_id
+      t.integer :invoice_id
       t.timestamps
     end
   end

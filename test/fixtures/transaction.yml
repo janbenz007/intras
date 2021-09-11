@@ -9,3 +9,5 @@ prvni:
   unitpricefx: EUR
   exporter_id: 1
   importer_id: 2
+  invoice_id: 1
+  id: 1

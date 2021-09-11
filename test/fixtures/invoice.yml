@@ -1,0 +1,5 @@
+faktura1:
+  exporter_id: 1
+  importer_id: 2
+  number: "abc123"
+  id: 1

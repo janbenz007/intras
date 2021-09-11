@@ -1,9 +1,8 @@
-class Transaction < ApplicationRecord
+class Invoice < ApplicationRecord
   # transaction that shows up on an invoice : captures goods, quantity, unit price etc.
   
-  belongs_to :classification
-  belongs_to :invoice
-  belongs_to :company
+  #belongs_to :company
+  has_many :transactions
 
   def exporter
     Company.find(self.exporter_id)
